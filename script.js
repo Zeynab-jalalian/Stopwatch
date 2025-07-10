@@ -1,4 +1,4 @@
-let hr = (min = sec = ms = "0" + 0),
+let hr = min = sec = ms = "0" + 0,
   startTimer;
 
 const startBtn = document.querySelector(".start"),
