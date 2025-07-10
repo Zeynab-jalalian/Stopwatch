@@ -1,4 +1,4 @@
-let hr = (min = sec = ms = "0" + 0),
+let hr = min = sec = ms = "0" + 0,
   startTimer;
 
 const startBtn = document.querySelector(".start"),
@@ -34,6 +34,7 @@ function start() {
       min = "0" + 0;
     }
 
+
     putValue();
   }, 10);
 }
@@ -49,7 +50,7 @@ function reset() {
   stopBtn.classList.remove("stopActive");
   clearInterval(startTimer);
   hr = min = sec = ms = "0" + 0;
-
+  putValue();
 }
 
 function putValue() {
